@@ -8,6 +8,8 @@
 
     <title>Usman's Portfolio</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
@@ -54,7 +56,7 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">Hello, Ik heet Usman Siddiqui.</h1>
+          <h1>Hallo, Ik ben <span class="typed"></span></h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">Een Informatica student die passie heeft voor zowel web als applicatie development</h2>
           <a href="#about" class="btn btn-primary js-scroll-trigger">Verder naar mijn werk</a>
         </div>
@@ -74,7 +76,7 @@
             <p class="text-white mb-50">Ik heet Usman Siddiqui. Ik ben een 23 jarige Informatica student van de Hogeschool Rotterdam. Hiervoor heb ik mijn propedeuse mogen behalen voor de opleiding Bedrijfseconomie. Tijdens de opleiding kwam ik erachter dat ik toch de ict kant op wilde. En aangezien ik al in mijn vrije tijd met programmeren bezig was, was ik overtuigt om de stap te nemen om van opleiding te veranderen. </p>
             <p class="text-white mb-50">Sterke eigenschappen van mij zijn dat ik <strong>perfectionistisch</strong> ben en <strong>analytisch ingesteld</strong>. Tevens ben ik ook een hard werker, iemand die door gaat totdat het werk af is. Ik ben geïnteresseerd in web en applicatie development omdat het tegenwoordig van groot belang is bij het bedrijfsleven. Ik geloof dat in de toekomst elk bedrijf digitaal beschikbaar zal zijn, hierbij kan ik hen helpen. In de toekomst zou ik aan de slag willen als een freelancer en hiermee genoeg skills en ervaring opbouwen om een eigen bedrijf te kunnen starten. Vervolgens vind ik het leuk om complexe problemen in stukken te snijden en begrijpelijk te maken zodat ze makkelijker opgelost kunnen worden. Mijn contact informatie is in de contact sectie te vinden. <p>
           </div>
-          <div class="col-lg-6 mx-auto">
+          <div id='chart' class="col-lg-6 mx-auto">
             <p class="text-white mb-50">Python</p>
             <div class="progress">
               <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -94,16 +96,11 @@
             <div class="progress">
               <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <br>
-              <p class="text-white mb-50 text-center">Mijn Cv Downloaden</p>
-              <a href="img/cvfile.docx" download>
-                <img class="cvimage cv" src="img/cvimage1.png" alt="Mijn CV Downloaden">
-              </a>
           </div>
         </div>
         <div class="row">
-          <div class="photoimage" class="col-lg-12 mx-auto">
-              <img src="img/mijnfoto.png">
+          <div id="photoimage">
+              <img id="photocv" src="img/mijnfoto.png">
             
           </div>
         </div>
@@ -111,11 +108,11 @@
     </section>
 
     <!-- Projects Section -->
-<!--     <section id="projects" class="projects-section bg-light">
-      <div class="container"> -->
+     <section id="projects" class="projects-section bg-light">
+      <div class="container"> 
 
         <!-- Featured Project Row -->
-     <!--    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-8 col-lg-7">
             <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
           </div>
@@ -125,10 +122,10 @@
               <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
             </div>
           </div>
-        </div> -->
+        </div> 
 
         <!-- Project One Row -->
-<!--         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
             <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
           </div>
@@ -143,10 +140,10 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div> 
 
         <!-- Project Two Row -->
-<!--         <div class="row justify-content-center no-gutters">
+         <div class="row justify-content-center no-gutters">
           <div class="col-lg-6">
             <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
           </div>
@@ -164,7 +161,7 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
 
     <!-- Signup Section -->
 <!--     <section id="signup" class="signup-section">
@@ -190,9 +187,9 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100 startin">
+              <div class="card-body text-center startin">
                 <i class="fas fa-envelope text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Email</h4>
                 <hr class="my-4">
@@ -203,9 +200,9 @@
             </div>
           </div>
 
-          <div class="col-md-6 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100 startin">
+              <div class="card-body text-center startin">
                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Phone</h4>
                 <hr class="my-4">
@@ -213,7 +210,20 @@
               </div>
             </div>
           </div>
+
+          <div class="col-md-4 mb-3 mb-md-0 ">
+              <div class="card py-4 h-100 startin">
+                <div class="card-body text-center startin">
+                  <i class="far fa-file-pdf" text-primary mb-2"></i>
+                  <h4 class="text-uppercase m-0">curriculum Vitae</h4>
+                  <hr class="my-4">
+                  <div class="small text-black-50"><a href="img/cvfile.docx" download>Click om te downloaden</a></div>
+                </div>
+              </div>
+            </div>
         </div>
+
+        
 
         <div class="social d-flex justify-content-center">
           <a href="https://www.linkedin.com/in/usman-siddiqui-ack/" class="mx-2">
@@ -240,6 +250,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

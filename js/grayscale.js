@@ -40,3 +40,13 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+var typed = $(".typed");
+
+$(function() {
+  typed.typed({
+    strings: ["", "Usman Siddiqui.", "een Student Developer."],
+    typeSpeed: 150,
+    loop: true,
+  });
+});
