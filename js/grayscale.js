@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -16,7 +16,7 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -27,7 +27,7 @@
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -43,7 +43,7 @@
 
 var typed = $(".typed");
 
-$(function() {
+$(function () {
   typed.typed({
     strings: ["", "Usman Siddiqui.", "een Student Developer."],
     typeSpeed: 150,
@@ -57,15 +57,15 @@ var portfolioIsotope = $('.portfolio-container').isotope({
   layoutMode: 'fitRows'
 });
 
-$('#portfolio-flters li').on( 'click', function() {
+$('#portfolio-flters li').on('click', function () {
   $("#portfolio-flters li").removeClass('filter-active');
   $(this).addClass('filter-active');
 
   portfolioIsotope.isotope({ filter: $(this).data('filter') });
 });
 
-$('#skills').waypoint(function() {
-  $('.progress .progress-bar').each(function() {
+$('#skills').waypoint(function () {
+  $('.progress .progress-bar').each(function () {
     $(this).css("width", $(this).attr("aria-valuenow") + '%');
   });
-}, { offset: '80%'} );
+}, { offset: '80%' });
