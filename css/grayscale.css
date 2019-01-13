@@ -37,55 +37,6 @@
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-    background-color: transparent;
-    -webkit-transition: background-color 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand {
-    padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  #mainNav .nav-link {
-    -webkit-transition: none;
-    transition: none;
-    padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  #mainNav .nav-link:active {
-    color: white;
-  }
-  #mainNav.navbar-shrink {
-    background-color: #fff;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
-  }
-  #mainNav.navbar-shrink .nav-link {
-    color: #161616;
-    padding: 1.5rem 1.5rem 1.25rem;
-    border-bottom: 0.25rem solid transparent;
-  }
-  #mainNav.navbar-shrink .nav-link:hover {
-    color: #282923;
-  }
-  #mainNav.navbar-shrink .nav-link:active {
-    color: #282923;
-  }
-  #mainNav.navbar-shrink .nav-link.active {
-    color: #282923;
-    outline: none;
-    border-bottom: 0.25rem solid #282923;
-  }
-}
-
 .masthead {
   position: relative;
   width: 100%;
@@ -122,25 +73,6 @@
   .masthead h1 {
     font-size: 25px;
     line-height: 2rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
-  }
-  .masthead h1 {
-    color: #898989;
-    font-family: 'Poppins', helvetica;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .masthead h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
   }
 }
 
@@ -193,13 +125,6 @@
   padding: 2rem;
 }
 
-@media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #282923;
-  }
-}
-
 .projects-section .project-text {
   padding: 3rem;
   font-size: 90%;
@@ -213,6 +138,72 @@
     border-color: #282923;
     border-width: .25rem;
     width: 30%;
+  }
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #282923;
+  }
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    color: #898989;
+    font-family: 'Poppins', helvetica;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link {
+    -webkit-transition: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #161616;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #282923;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #282923;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #282923;
+    outline: none;
+    border-bottom: 0.25rem solid #282923;
   }
 }
 
