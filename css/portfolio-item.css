@@ -4,6 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
  */
 
+html {
+	height:100%;
+}
 body {
   padding-top: 54px;
 }
@@ -12,4 +15,13 @@ body {
   body {
     padding-top: 56px;
   }
+}
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
